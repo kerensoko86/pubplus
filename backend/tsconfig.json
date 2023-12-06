@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "alwaysStrict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2022"
+  },
+  // "types": ["dotenv"],
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

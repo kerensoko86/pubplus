@@ -1,0 +1,9 @@
+{
+  "execMap": {
+    "ts": "node --loader ts-node/esm"
+  },
+  "verbose": true,
+  "ext": "ts",
+  "ignore": ["src/**/*.spec.ts"],
+  "delay": "1000"
+}
