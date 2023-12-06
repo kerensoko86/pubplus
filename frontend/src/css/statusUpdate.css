@@ -1,0 +1,21 @@
+.status-update {
+  margin-bottom: 16px;
+}
+
+.status-update label {
+  font-weight: bold;
+  margin-right: 8px;
+  padding: 10px;
+}
+
+.status-update select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+option {
+  padding: 10px;
+  margin: 10px;
+}

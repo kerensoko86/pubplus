@@ -1,0 +1,70 @@
+.centered-div {
+  margin-top: 100px;
+  height: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(247, 89, 89, 0.1);
+  width: 100%;
+}
+
+.centered-div button {
+  width: 20%;
+  background-color: rgb(41, 41, 136);
+  float: right;
+}
+.flex-container {
+  display: flex;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+h2 {
+  color: #333;
+}
+
+select {
+  margin-top: 8px;
+  padding: 8px;
+}
+
+hr {
+  margin: 16px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.checkbox-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkbox-item {
+  display: flex;
+  margin-right: 16px;
+}
+
+.checkbox-item label {
+  margin-left: 4px;
+}
+
+.employee-item {
+  background: #eee;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.employee-item.on-vacation {
+  background: #ccc;
+}
