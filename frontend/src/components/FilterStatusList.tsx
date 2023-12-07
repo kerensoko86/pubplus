@@ -4,7 +4,7 @@ import "../css/filterStatusList.css";
 interface FilterStatusListProps {
   statuses: string[];
   selectedOptions: string[];
-  handleSelectChange: (e: any) => void;
+  handleSelectChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const FilterStatusList: React.FC<FilterStatusListProps> = ({

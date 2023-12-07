@@ -1,11 +1,13 @@
 import { Employee } from "../types";
 import "../css/header.css";
 
-const Header: React.FC<{
+interface HeaderProps {
   user: Employee;
   newStatus: string | undefined;
   onLogout: () => void;
-}> = ({ user, newStatus, onLogout }) => {
+}
+
+const Header: React.FC<HeaderProps> = ({ user, newStatus, onLogout }) => {
   return (
     <>
       {" "}

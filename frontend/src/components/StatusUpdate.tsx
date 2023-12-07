@@ -5,7 +5,7 @@ interface StatusUpdateProps {
   handleUpdateStatus: (id: string, status: string) => void;
   user: Employee;
   statuses: string[];
-  setNewStatus: (e: any) => void;
+  setNewStatus: (e: string) => void;
   newStatus: string;
 }
 
