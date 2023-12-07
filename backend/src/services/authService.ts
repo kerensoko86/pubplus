@@ -28,26 +28,3 @@ export const login = async (
     throw error;
   }
 };
-
-export const authenticateUser = async (
-  username: string,
-  password: string,
-  usersCollection: Collection<User>
-): Promise<boolean> => {
-  const user = await usersCollection.findOne({ username });
-
-  if (!user) {
-    console.log("User not found");
-    return false;
-  }
-
-  const isPasswordValid = await comparePasswords(password, user.hashedPassword);
-
-  if (!isPasswordValid) {
-    console.log("Invalid password");
-    return false;
-  }
-
-  console.log("Authentication successful");
-  return true;
-};
