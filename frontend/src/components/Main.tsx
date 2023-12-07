@@ -33,7 +33,6 @@ const Main: React.FC<MainProps> = ({ token, user, onLogout }) => {
     const fetchEmployees = async () => {
       try {
         const res = await axiosInstance.get("/employees");
-        console.log(res);
         setEmployees(res.data.employees);
       } catch (err) {
         console.log(err);
@@ -44,7 +43,7 @@ const Main: React.FC<MainProps> = ({ token, user, onLogout }) => {
 
   const handleUpdateStatus = async (id: string, status: string) => {
     const employee = employees.find((e) => e._id === id);
-    const employeeToUpdate = { ...employee, status: status };
+    const employeeToUpdate = { ...employee, status };
     try {
       const res = await axiosInstance.put(`/employees/${id}`, {
         employee: employeeToUpdate,
